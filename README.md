@@ -31,3 +31,10 @@ curl -X 'POST'   'http://localhost:8080/iris/classify_iris'   -H 'accept: applic
   "petal_length": 3,
   "petal_width": 4
 }'
+
+or 
+curl -X 'POST'   'https://heroku-iris-fastapi.herokuapp.com/iris/classify_iris'   -H 'accept: application/json'   -H 'Content-Type: application/json'   -d '{  "sepal_length": 5,
+  "sepal_width": 2,
+  "petal_length": 3,
+  "petal_width": 4
+}'
